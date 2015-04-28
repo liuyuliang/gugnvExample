@@ -5,6 +5,7 @@
 	<artifactId>gugnvExample</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
+	<name>gugnvE</name>
 	<build>
 		<plugins>
 			<plugin>
