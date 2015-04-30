@@ -33,5 +33,6 @@
 	</build>
   <modules>
     <module>socket-example</module>
+    <module>fastjson-example</module>
   </modules>
 </project>
