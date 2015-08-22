@@ -5,7 +5,7 @@
 	<artifactId>example</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
-	<name>gugnv</name>
+	<name>gugnvExample</name>
 	<build>
 		<plugins>
 			<plugin>
