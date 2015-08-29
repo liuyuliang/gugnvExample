@@ -8,7 +8,7 @@
 		<artifactId>example</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>com.gugnv.example.activemq</groupId>
+	<groupId>com.gugnv</groupId>
 	<artifactId>ActiveMQ-example</artifactId>
 	<version>1.0.0</version>
 	<name>ActiveMQ-example</name>

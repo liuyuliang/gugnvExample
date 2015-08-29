@@ -8,34 +8,19 @@
 		<artifactId>example</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>com.gugnv.example.activemq</groupId>
-	<artifactId>ActiveMQ-example</artifactId>
+	<groupId>com.gugnv.example.mongoDB</groupId>
+	<artifactId>mongoDB-example</artifactId>
 	<version>1.0.0</version>
-	<name>ActiveMQ-example</name>
+	<name>mongoDB-example</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.xbean</groupId>
-			<artifactId>xbean-spring</artifactId>
-			<version>3.16</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-all</artifactId>
-			<version>5.12.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-web</artifactId>
-			<version>5.12.0</version>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver</artifactId>
+			<version>3.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -44,5 +29,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<packaging>war</packaging>
 </project>

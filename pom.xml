@@ -35,5 +35,6 @@
     <module>socket-example</module>
     <module>fastjson-example</module>
     <module>ActiveMQ-example</module>
+    <module>mongoDB-example</module>
   </modules>
 </project>
