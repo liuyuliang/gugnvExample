@@ -1,4 +1,4 @@
-package org.mytest;
+package com.gugnv.example.xfire.services;
 
 public class Test implements ITest {
 

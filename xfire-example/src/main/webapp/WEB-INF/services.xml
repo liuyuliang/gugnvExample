@@ -4,9 +4,9 @@
 		<name>CMA</name>
 		<namespace>http://info.nari-china.com/CMA</namespace>
 		<serviceClass>
-			org.mytest.ITest</serviceClass>
+			com.gugnv.example.xfire.services.ITest</serviceClass>
 		<implementationClass>
-			org.mytest.Test
+			com.gugnv.example.xfire.services.Test
 		</implementationClass>
 
 	</service>
