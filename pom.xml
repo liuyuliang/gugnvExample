@@ -36,5 +36,6 @@
     <module>fastjson-example</module>
     <module>ActiveMQ-example</module>
     <module>mongoDB-example</module>
+    <module>xfire-example</module>
   </modules>
 </project>

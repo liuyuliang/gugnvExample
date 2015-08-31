@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+	<service>
+		<name>CMA</name>
+		<namespace>http://info.nari-china.com/CMA</namespace>
+		<serviceClass>
+			org.mytest.ITest</serviceClass>
+		<implementationClass>
+			org.mytest.Test
+		</implementationClass>
+
+	</service>
+</beans>
