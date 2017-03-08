@@ -8,7 +8,6 @@
 		<artifactId>example</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>com.gugnv.example</groupId>
 	<artifactId>socket-example</artifactId>
 	<name>socket-example</name>
 	<url>http://maven.apache.org</url>

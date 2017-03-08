@@ -8,7 +8,6 @@
 		<artifactId>example</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>com.gugnv.example.mongoDB</groupId>
 	<artifactId>mongoDB-example</artifactId>
 	<version>1.0.0</version>
 	<name>mongoDB-example</name>
