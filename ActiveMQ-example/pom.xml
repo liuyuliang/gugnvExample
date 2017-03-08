@@ -8,7 +8,6 @@
 		<artifactId>example</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>com.gugnv.example.activemq</groupId>
 	<artifactId>ActiveMQ-example</artifactId>
 	<version>1.0.0</version>
 	<name>ActiveMQ-example</name>
@@ -17,6 +16,18 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
