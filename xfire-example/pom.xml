@@ -8,7 +8,6 @@
 		<artifactId>example</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<groupId>com.gugnv.example.xfire</groupId>
 	<artifactId>xfire-example</artifactId>
 	<version>1.0.0</version>
 	<name>xfire-example</name>
