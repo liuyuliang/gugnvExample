@@ -9,7 +9,7 @@
 		<version>1.0.0</version>
 	</parent>
 	<artifactId>mongoDB-example</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>mongoDB-example</name>
 	<url>http://maven.apache.org</url>
 	<properties>

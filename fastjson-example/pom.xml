@@ -9,7 +9,7 @@
 		<version>1.0.0</version>
 	</parent>
 	<artifactId>fastjson-example</artifactId>
-	<version>1.0</version>
+	<version>1.0.0</version>
 	<name>fastjson-example</name>
 	<url>http://maven.apache.org</url>
 	<properties>

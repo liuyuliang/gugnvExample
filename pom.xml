@@ -37,5 +37,6 @@
     <module>ActiveMQ-example</module>
     <module>mongoDB-example</module>
     <module>xfire-example</module>
+    <module>pom-example</module>
   </modules>
 </project>

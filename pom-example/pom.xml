@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--声明项目描述符遵循哪一个POM模型版本。模型本身的版本很少改变 -->
+	<modelVersion>4.0.0</modelVersion>
+	<!-- 父项目的pom.xml文件的相对路径 -->
+	<parent>
+		<groupId>com.gugnv</groupId>
+		<artifactId>example</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<artifactId>pom-example</artifactId>
+	<!-- 项目当前版本 -->
+	<version>1.0.1</version>
+	<!-- 项目产生的构件类型 ear jar war ejb pom -->
+	<packaging>jar</packaging>
+	<!-- 项目的名称, Maven产生的文档用 -->
+	<name>pom-example</name>
+	<!-- 项目描述 -->
+	<description>test</description>
+	<!-- 项目主页的URL, Maven产生的文档用 -->
+	<url>http://maven.apache.org</url>
+	<!-- 版权许可 -->
+	<licenses>
+		<license>
+			<name>GNU GENERAL PUBLIC LICENSE, Version 3</name>
+			<url>http://www.gnu.org/licenses/gpl.txt</url>
+		</license>
+	</licenses>
+	<!-- 项目相关邮件列表信息 -->
+	<mailingLists>
+		<mailingList>
+			<!-- 名称 -->
+			<name>gugnv</name>
+			<!-- 邮件地址 -->
+			<post>gugnv@qq.com</post>
+		</mailingList>
+	</mailingLists>
+	<!-- 开发者信息 -->
+	<developers>
+		<developer>
+			<name>gugnv</name>
+			<email>gugnv@qq.com</email>
+			<!-- 项目中角色 -->
+			<roles>
+				<role>PM</role>
+			</roles>
+		</developer>
+	</developers>
+	<!-- 项目的其他工作人员 -->
+	<contributors>
+		<contributor>
+			<!-- 名称 -->
+			<name>gugnv</name>
+			<!-- email -->
+			<email>gugnv@qq.com</email>
+			<!-- URL -->
+			<url>http://localhost</url>
+			<!-- 所属组织 -->
+			<organization>gugnv</organization>
+			<!-- 项目贡献者所属组织的URL -->
+			<organizationUrl>http://localhost</organizationUrl>
+			<!-- 项目贡献者在项目中扮演的角色，角色元素描述了各种角色 -->
+			<roles>
+				<role> PM </role>
+			</roles>
+		</contributor>
+	</contributors>
+	<!-- 代码库 -->
+	<scm>
+		<!-- SCM的URL,该URL描述了版本库和如何连接到版本库。欲知详情，请看SCMs提供的URL格式和列表。该连接只读。 -->
+		<connection>scm:git:git@github.com:liuyuliang/gugnvExample.git</connection>
+		<developerConnection>scm:git:git@github.com:liuyuliang/gugnvExample.git</developerConnection>
+		<!-- 当前代码的标签，在开发阶段默认为HEAD -->
+		<tag></tag>
+		<!-- 指向项目的可浏览SCM库 -->
+		<url>https://github.com/liuyuliang/gugnvExample.git</url>
+	</scm>
+	<!-- 项目持续集成信息 -->
+	<ciManagement>
+		<!-- 持续集成系统的名字 -->
+		<system>continuum</system>
+		<!-- 该项目使用的持续集成系统的URL -->
+		<url>http://localhost:8080/continuum</url>
+		<!-- 构建完成时，需要通知的开发者/用户的配置项。包括被通知者信息和通知条件（错误，失败，成功，警告） -->
+		<notifiers>
+			<!-- 配置一种方式，当构建中断时，以该方式通知用户/开发者 -->
+			<notifier>
+				<!-- 传送通知的途径 mail -->
+				<type>mail</type>
+				<!-- 发生错误时是否通知 -->
+				<sendOnError>true</sendOnError>
+				<!-- 构建失败时是否通知 -->
+				<sendOnFailure>true</sendOnFailure>
+				<!-- 构建成功时是否通知 -->
+				<sendOnSuccess>true</sendOnSuccess>
+				<!-- 发生警告时是否通知 -->
+				<sendOnWarning>false</sendOnWarning>
+				<!-- 不赞成使用。通知发送到哪里 -->
+				<address>gugnv@qq.com</address>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+	<!-- 项目创建年份，4位数字。当产生版权信息时需要使用这个值。 -->
+	<inceptionYear>2017</inceptionYear>
+	<!-- 项目开发者属性，如jar包的版本号 Properties可以在整个POM中使用 引用值时如：${project.build.sourceEncoding} -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<!-- 项目引入插件所需要的额外依赖 -->
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<!--公共依赖 管理jar包的版本，让子项目中引用一个依赖而不用显示的列出版本号 -->
+	<dependencyManagement>
+
+	</dependencyManagement>
+	<!-- 类似于settings.xml中的profiles -->
+	<profiles>
+	</profiles>
+	<!-- 主要用于编译设置 -->
+	<build>
+		<!-- 生成最后的文件的样式 -->
+		<finalName>pom-example</finalName>
+		<!-- 你项目中需要指定的资源 -->
+		<resources>
+			<resource>
+				<!-- 资源所在的位置 -->
+				<directory>src/main/java</directory>
+				<!-- 样式，包括那些资源 -->
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+				<!-- 是否替换资源中的属性 -->
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+		<!-- 该项目在build时，执行的插件 -->
+		<plugins>
+			<!-- 测试插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<!-- 跳过测试用例 -->
+					<skipTests>true</skipTests>
+					<!-- 忽略错误而继续构建 -->
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+		</plugins>
+		<!-- 子项目可以引用的默认插件信息。该插件配置项直到被引用时才会被解析或绑定到生命周期。给定插件的任何本地配置都会覆盖这里的配置 -->
+		<pluginManagement>
+
+		</pluginManagement>
+	</build>
+	<!-- 组织信息 -->
+	<organization>
+		<name>gugnv</name>
+		<url>http://localhost</url>
+	</organization>
+	<!-- 项目的问题管理系统 -->
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/liuyuliang/gugnvExample/issues</url>
+	</issueManagement>
+	<!-- 设定除中央仓库(repo1.maven.org/maven2/)外的其他仓库,按设定顺序进行查找 -->
+	<repositories>
+		<repository>
+			<!-- 远程仓库唯一标识符。可以用来匹配在settings.xml文件里配置的远程仓库 -->
+			<id>spring-releases</id>
+			<!-- 远程仓库名称 -->
+			<name>spring-io</name>
+			<url>https://repo.spring.io/libs-release</url>
+			<snapshots>
+				<!-- true或者false表示该仓库是否为下载某种类型构件（发布版，快照版）开启 -->
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
