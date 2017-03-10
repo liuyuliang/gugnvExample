@@ -38,5 +38,6 @@
     <module>mongoDB-example</module>
     <module>xfire-example</module>
     <module>pom-example</module>
+    <module>webmagic-example</module>
   </modules>
 </project>
